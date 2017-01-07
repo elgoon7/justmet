@@ -8,12 +8,16 @@ import android.view.ViewGroup;
 
 import io.justmet.justmet.R;
 
-/**
- * A placeholder fragment containing a simple view.
- */
+
 public class MapFragment extends Fragment {
 
     public MapFragment() {
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override

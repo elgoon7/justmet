@@ -11,14 +11,17 @@ import java.util.ArrayList;
 import io.justmet.justmet.Person;
 import io.justmet.justmet.R;
 
-/**
- * A placeholder fragment containing a simple view.
- */
+
 public class ListFragment extends Fragment {
 
     ArrayList<Person> personArray = new ArrayList<>();
 
     public ListFragment() {
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
