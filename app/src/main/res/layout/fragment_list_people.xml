@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9fa99c"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="io.justmet.justmet.MainActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/justMetList"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
@@ -26,7 +29,7 @@
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:src="@drawable/ic_plus_white_24dp"
-        app:layout_anchor="@id/justMetList"
-        app:layout_anchorGravity="bottom|right|end" />
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="13dp" />
 
-</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
