@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.justmet.justmet.fragments.ListPeopleFragment;
-import io.justmet.justmet.fragments.MapFragment;
 import io.justmet.justmet.fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ListPeopleFragment(), "List");
-        adapter.addFragment(new MapFragment(), "Map");
+        adapter.addFragment(new ProfileFragment(), "Map");
         adapter.addFragment(new ProfileFragment(), "Profile");
         viewPager.setAdapter(adapter);
     }
